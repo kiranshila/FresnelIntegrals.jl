@@ -1,4 +1,4 @@
-# FresnelIntegrals
+# FresnelIntegrals.jl
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://kiranshila.github.io/FresnelIntegrals.jl/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://kiranshila.github.io/FresnelIntegrals.jl/dev)
@@ -12,7 +12,10 @@ using FresnelIntegrals
 using Plots
 
 z = -30:0.001:30
-plot(x->real(fresnelc(x)), x->real(fresnels(x)),z,legend=false,xlabel="C(x)",ylabel="S(x)",title="Euler Spiral")
+plot(x->real(fresnelc(x)), x->real(fresnels(x)),z,legend=false)
+title!("Euler Spiral")
+xlabel!("C(z)")
+ylabel!("S(z)")
 ```
 ![Spiral](Spiral.png)
 
@@ -35,7 +38,7 @@ BenchmarkTools.Trial:
   samples:          10000
   evals/sample:     200
 
-julia> @benchmark quadgk(z->cos(π*z^2/2),0,1.8)
+julia> @benchmark quadgk(t->cos(π*t^2/2),0,1.8)
 BenchmarkTools.Trial:
   memory estimate:  1.00 KiB
   allocs estimate:  42
