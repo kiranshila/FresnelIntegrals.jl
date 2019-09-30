@@ -10,6 +10,8 @@ Until this is added into Pkg's manifest, just add from the Github link
 Pkg.add("https://github.com/kiranshila/FresnelIntegrals.jl")
 ```
 
+## Functions
+
 ```@autodocs
 Modules = [FresnelIntegrals]
 ```
