@@ -1,7 +1,7 @@
 name = "FresnelIntegrals"
 uuid = "88497964-e39a-11e9-0fb5-b1bf0ffe80fe"
 authors = ["Kiran Shila\n <me@kiranshila.com>"]
-version = "0.1.1"
+version = "0.1.0"
 
 [deps]
 IrrationalConstants = "92d709cd-6900-40b7-9082-c6be49f344b6"
