@@ -1,2 +1,3 @@
 [deps]
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+FresnelIntegrals = "88497964-e39a-11e9-0fb5-b1bf0ffe80fe"

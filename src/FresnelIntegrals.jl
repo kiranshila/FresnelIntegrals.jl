@@ -92,6 +92,4 @@ function fresnel(z::Real)
     return (y_cos, y_sin)
 end
 
-
-
 end # module
