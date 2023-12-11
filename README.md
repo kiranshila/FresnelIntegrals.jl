@@ -26,28 +26,26 @@ using QuadGK
 using FresnelIntegrals
 
 julia> @benchmark fresnelc(1.8)
-BenchmarkTools.Trial:
-  memory estimate:  0 bytes
-  allocs estimate:  0
-  --------------
-  minimum time:     410.815 ns (0.00% GC)
-  median time:      412.035 ns (0.00% GC)
-  mean time:        426.088 ns (0.00% GC)
-  maximum time:     1.017 μs (0.00% GC)
-  --------------
-  samples:          10000
-  evals/sample:     200
+BenchmarkTools.Trial: 10000 samples with 772 evaluations.
+ Range (min … max):  161.448 ns …  1.744 μs  ┊ GC (min … max): 0.00% … 0.00%
+ Time  (median):     163.927 ns              ┊ GC (median):    0.00%
+ Time  (mean ± σ):   164.460 ns ± 16.519 ns  ┊ GC (mean ± σ):  0.00% ± 0.00%
+
+  ▃▄▂                ▁▇█▄          ▁  ▃▄▂▁        ▁▁▁          ▂
+  ███▇▁▃▁▁▁▁▁▁▁▁▁▁▅▇▅█████▁▄▄▄▆▆▅▆▆█▇▆█████▇▆▅▅▇██████▇▇▆▇▇▆▅▆ █
+  161 ns        Histogram: log(frequency) by time       168 ns <
+
+ Memory estimate: 0 bytes, allocs estimate: 0.
 
 julia> @benchmark quadgk(t->cos(π*t^2/2),0,1.8)
-BenchmarkTools.Trial:
-  memory estimate:  1.00 KiB
-  allocs estimate:  42
-  --------------
-  minimum time:     2.181 μs (0.00% GC)
-  median time:      2.250 μs (0.00% GC)
-  mean time:        3.357 μs (31.54% GC)
-  maximum time:     7.919 ms (99.89% GC)
-  --------------
-  samples:          10000
+BenchmarkTools.Trial: 10000 samples with 187 evaluations.
+ Range (min … max):  548.321 ns …  48.949 μs  ┊ GC (min … max): 0.00% … 98.43%
+ Time  (median):     554.893 ns               ┊ GC (median):    0.00%
+ Time  (mean ± σ):   599.010 ns ± 558.147 ns  ┊ GC (mean ± σ):  2.25% ±  3.29%
 
+  ▅█▆▂▄▃▃▁▁▁▁▁                    ▂▁                  ▁▁▁▁▂▁    ▁
+  ███████████████▇▅▆▅▄▃▅▄▅▅▅▄▄▃▄████████▇▇▆▆▇▆▆▆▇▇▇▇▇█████████▇ █
+  548 ns        Histogram: log(frequency) by time        754 ns <
+
+ Memory estimate: 368 bytes, allocs estimate: 2.
 ```
