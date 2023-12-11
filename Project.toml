@@ -4,14 +4,15 @@ authors = ["Kiran Shila\n <me@kiranshila.com>"]
 version = "0.1.0"
 
 [deps]
+IrrationalConstants = "92d709cd-6900-40b7-9082-c6be49f344b6"
 SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
 
 [compat]
 julia = "1"
 
 [extras]
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 QuadGK = "1fd47b50-473d-5c70-9696-f719f8f3bcdc"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
-test = ["Test","QuadGK"]
+test = ["Test", "QuadGK"]
