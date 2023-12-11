@@ -2,8 +2,8 @@
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://kiranshila.github.io/FresnelIntegrals.jl/stable/)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://kiranshila.github.io/FresnelIntegrals.jl/dev/)
-[![Build Status](https://github.com/kiranshila/FresnelIntegrals.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/kiranshila/FresnelIntegrals.jl/actions/workflows/CI.yml?query=branch%3Amain)
-[![Coverage](https://codecov.io/gh/kiranshila/FresnelIntegrals.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/kiranshila/FresnelIntegrals.jl)
+[![Build Status](https://github.com/kiranshila/FresnelIntegrals.jl/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/kiranshila/FresnelIntegrals.jl/actions/workflows/CI.yml?query=branch%3Amaster)
+[![Coverage](https://codecov.io/gh/kiranshila/FresnelIntegrals.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/kiranshila/FresnelIntegrals.jl)
 
 A quick Julia library for calculating Fresnel Integrals using the error function from [SpecialFunctions.jl](https://github.com/JuliaMath/SpecialFunctions.jl).
 

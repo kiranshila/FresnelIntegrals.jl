@@ -1,4 +1,5 @@
 using Documenter, FresnelIntegrals
+using Documenter.Remotes
 
 makedocs(sitename="FresnelIntegrals.jl")
 
@@ -7,12 +8,12 @@ DocMeta.setdocmeta!(FresnelIntegrals, :DocTestSetup, :(using FresnelIntegrals); 
 makedocs(;
     modules=[FresnelIntegrals],
     authors="Kiran Shila <me@kiranshila.com> and contributors",
-    repo="https://github.com/kiranshila/FresnelIntegrals.jl/blob/{commit}{path}#{line}",
+    repo=Remotes.GitHub("kiranshila","FresnelIntegrals.jl"),
     sitename="FresnelIntegrals.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
         canonical="https://kiranshila.github.io/FresnelIntegrals.jl",
-        edit_link="main",
+        edit_link="master",
         assets=String[],
     ),
     pages=[
@@ -21,6 +22,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/kiranshila/FresnelIntegrals.jl",
-    devbranch="main",
+    repo="github.com/kiranshila/FresnelIntegrals.jl.git",
+    devbranch="master",
 )
