@@ -12,10 +12,7 @@ using FresnelIntegrals
 using Plots
 
 z = -30:0.001:30
-plot(x->real(fresnelc(x)), x->real(fresnels(x)),z,legend=false)
-title!("Euler Spiral")
-xlabel!("C(z)")
-ylabel!("S(z)")
+plot(fresnelc, fresnels, z; legend=false, title="Euler Spiral", xlabel="C(z)", ylabel="S(z)")
 ```
 ![Spiral](Spiral.png)
 
